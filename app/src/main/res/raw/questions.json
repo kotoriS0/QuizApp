@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the second largest lake by area?",
+    "answers": ["Superior", "Tanganyika", "Erie", "Lake of the Woods"],
+    "correct": "Superior"
+  },
+  {
+    "question": "What vegetables were used during halloween as Jack-O-Lanterns before pumpkins?",
+    "answers": ["Aubergines", "Watermelons", "Turnips", "Potatoes"],
+    "correct": "Turnips"
+  },
+  {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  },
+  {
+  "question": "",
+  "answers": ["", "", "", ""],
+  "correct": ""
+  },
+  {
+    "question": "",
+    "answers": ["", "", "", ""],
+    "correct": ""
+  }
+]
