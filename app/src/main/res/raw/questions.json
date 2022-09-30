@@ -2,31 +2,73 @@
   {
     "question": "What is the second largest lake by area?",
     "answers": ["Superior", "Tanganyika", "Erie", "Lake of the Woods"],
-    "correct": "Superior"
+    "correct": ["Superior"],
+    "id": "01"
   },
   {
     "question": "What vegetables were used during halloween as Jack-O-Lanterns before pumpkins?",
-    "answers": ["Aubergines", "Watermelons", "Turnips", "Potatoes"],
-    "correct": "Turnips"
+    "answers": ["Turnips", "Watermelons", "Potatoes", "Aubergines"],
+    "correct": ["Turnips"],
+    "id": "02"
   },
   {
-    "question": "",
-    "answers": ["", "", "", ""],
-    "correct": ""
+    "question": "What is the name of the indigenous nation LA resides on?",
+    "answers": ["Tongva", "Kalmath", "Ho-Chunk", "Cherokee"],
+    "correct": ["Tongva"],
+    "id": "03"
   },
   {
-    "question": "",
-    "answers": ["", "", "", ""],
-    "correct": ""
+    "question": "What is the first known written language?",
+    "answers": ["Sumerian", "Latin", "Arabic", "Egyptian hieroglyphics"],
+    "correct": ["Sumerian"],
+    "id": "04"
   },
   {
-  "question": "",
-  "answers": ["", "", "", ""],
-  "correct": ""
+    "question": "What animal are hyenas most closely related to?",
+    "answers": ["Cats", "Wolves", "Elephants", "Rats"],
+    "correct": ["Cats"],
+    "id": "05"
   },
   {
-    "question": "",
-    "answers": ["", "", "", ""],
-    "correct": ""
+    "question": "Was the word orange first given to the color or the fruit?",
+    "answers": ["Fruit", "Colour"],
+    "correct": ["Fruit"],
+    "id": "06"
+  },
+  {
+    "question": "‘Correlation’ can be used to describe a relationship between a quantitative and qualitative variable.",
+    "answers": ["True", "False"],
+    "correct": ["False"],
+    "id": "07"
+  },
+  {
+    "question": "Denmark primarily uses the Euro as its form of currency.",
+    "answers": ["True", "False", "", ""],
+    "correct": ["False"],
+    "id": "08"
+  },
+  {
+    "question": "What is the highest selling album of all time?",
+    "answers": ["Michael Jackson's “Thriller”", "Led Zeppelin's “Led Zeppelin II”", "Pink Floyd’s “The Dark Side of the Moon”", "Fleetwood Mac’s “Rumors”"],
+    "correct": ["Michael Jackson's “Thriller”"],
+    "id": "09"
+  },
+  {
+    "question": "How many bones does the average human adult have?",
+    "answers": ["206", "503", "2", "128"],
+    "correct": ["206"],
+    "id": "10"
+  },
+  {
+    "question": "How many bones does the average human infant have?",
+    "answers": ["270", "206", "25", "350"],
+    "correct": ["270"],
+    "id": "11"
+  },
+  {
+    "question": "Who is this?",
+    "answers": ["Dave Miller", "Aubergine Man", "Vincent", "William Afton"],
+    "correct": ["Dave Miller", "Aubergine Man", "Vincent", "William Afton"],
+    "id": "12"
   }
 ]
