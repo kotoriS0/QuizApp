@@ -50,7 +50,7 @@
   {
     "question": "What is the highest selling album of all time?",
     "answers": ["Thriller", "Led Zeppelin II", "The Dark Side of the Moon", "Rumors"],
-    "correct": ["Michael Jackson's “Thriller”"],
+    "correct": ["Thriller"],
     "id": "09"
   },
   {

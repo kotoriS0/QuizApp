@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -67,28 +68,64 @@ class MainActivity : AppCompatActivity() {
         nextQuestion()
 
         nw.setOnClickListener {
-            if(nw.text.equals(questionList.get(count).correct)) {
+            if(nw.text.equals(questionList.get(count).correct[0])) {
                 score++
-                Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
             }
             count ++
             nextQuestion()
         }
         ne.setOnClickListener {
-            if(ne.text.equals(questionList.get(count).correct))
-                score ++
+            if(ne.text.equals(questionList.get(count).correct[0])) {
+                score++
+                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            }
+            else if (questionList.get(count).correct.size > 1) {
+                if(ne.text.equals(questionList.get(count).correct[1])) {
+                    score++
+                    //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else {
+                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
+            }
             count ++
             nextQuestion()
         }
         sw.setOnClickListener {
-            if(sw.text.equals(questionList.get(count).correct))
-                score ++
+            if(sw.text.equals(questionList.get(count).correct[0])) {
+                score++
+                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            }
+            else if (questionList.get(count).correct.size > 1) {
+                if(sw.text.equals(questionList.get(count).correct[2])) {
+                    score++
+                    //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else {
+                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
+            }
             count ++
             nextQuestion()
         }
         se.setOnClickListener {
-            if(se.text.equals(questionList.get(count).correct))
-                score ++
+            if(se.text.equals(questionList.get(count).correct[0])) {
+                score++
+                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            }
+            else if (questionList.get(count).correct.size > 1) {
+                if(se.text.equals(questionList.get(count).correct[3])) {
+                    score++
+                    //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else {
+                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
+            }
             count ++
             nextQuestion()
         }
@@ -118,7 +155,7 @@ class MainActivity : AppCompatActivity() {
 
             sw.text = current.answers.get(2)
             se.text = current.answers.get(3)
-        } else if (current.answers.size == 2) {
+        } else if (current.answers.size < 4) {
             sw.visibility = View.GONE
             se.visibility = View.GONE
         }
