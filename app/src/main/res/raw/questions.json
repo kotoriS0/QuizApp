@@ -12,9 +12,9 @@
     "id": "02"
   },
   {
-    "question": "What is the name of the indigenous nation LA resides on?",
-    "answers": ["Tongva", "Kalmath", "Ho-Chunk", "Cherokee"],
-    "correct": ["Tongva"],
+    "question": "‘Correlation’ can be used to describe a relationship between a quantitative and qualitative variable.",
+    "answers": ["True", "False"],
+    "correct": ["False"],
     "id": "03"
   },
   {
@@ -24,9 +24,9 @@
     "id": "04"
   },
   {
-    "question": "What animal are hyenas most closely related to?",
-    "answers": ["Cats", "Wolves", "Elephants", "Rats"],
-    "correct": ["Cats"],
+    "question": "What is the name of the indigenous nation LA resides on?",
+    "answers": ["Tongva", "Kalmath", "Ho-Chunk", "Cherokee"],
+    "correct": ["Tongva"],
     "id": "05"
   },
   {
@@ -36,9 +36,9 @@
     "id": "06"
   },
   {
-    "question": "‘Correlation’ can be used to describe a relationship between a quantitative and qualitative variable.",
-    "answers": ["True", "False"],
-    "correct": ["False"],
+    "question": "What animal are hyenas most closely related to?",
+    "answers": ["Cats", "Wolves", "Elephants", "Rats"],
+    "correct": ["Cats"],
     "id": "07"
   },
   {
@@ -49,7 +49,7 @@
   },
   {
     "question": "What is the highest selling album of all time?",
-    "answers": ["Michael Jackson's “Thriller”", "Led Zeppelin's “Led Zeppelin II”", "Pink Floyd’s “The Dark Side of the Moon”", "Fleetwood Mac’s “Rumors”"],
+    "answers": ["Thriller", "Led Zeppelin II", "The Dark Side of the Moon", "Rumors"],
     "correct": ["Michael Jackson's “Thriller”"],
     "id": "09"
   },
