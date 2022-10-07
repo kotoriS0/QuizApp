@@ -19,19 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     val TAG = "MainActivity"
 
-    /*val inputStream = resources.openRawResource(R.raw.questions)
-    val jsonString = inputStream.bufferedReader().use {
-        // the last line of the use function is returned
-        it.readText()
-    }
-    Log.d(TAG, "onCreate: $jsonString")
-
-    val list = listOf("String1", "String2" ... )
-    val gson = Gson()
-    //val jsonString = gson.toJson(list)
-    val sType = object : TypeToken<List<Question>>() { }.type
-    val otherList = gson.fromJson<List<Question>>(jsonString, sType)
-*/
     lateinit var question: TextView
     lateinit var bottomText: TextView
     lateinit var nw: Button
