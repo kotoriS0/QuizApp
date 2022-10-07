@@ -43,7 +43,7 @@
   },
   {
     "question": "Denmark primarily uses the Euro as its form of currency.",
-    "answers": ["True", "False", "", ""],
+    "answers": ["True", "False"],
     "correct": ["False"],
     "id": "08"
   },
@@ -67,8 +67,8 @@
   },
   {
     "question": "Who is this?",
-    "answers": ["Dave Miller", "Aubergine Man", "Vincent", "William Afton"],
-    "correct": ["Dave Miller", "Aubergine Man", "Vincent", "William Afton"],
+    "answers": ["Dave Miller", "Aubergine Man", "William Afton", "Jack F. Kennedy"],
+    "correct": ["Dave Miller", "Aubergine Man", "William Afton"],
     "id": "12"
   }
 ]
