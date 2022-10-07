@@ -205,6 +205,7 @@ class MainActivity : AppCompatActivity() {
         bottomText.visibility = View.GONE
         image.visibility = View.GONE
         retry.visibility = View.VISIBLE
+
     }
 }
 
