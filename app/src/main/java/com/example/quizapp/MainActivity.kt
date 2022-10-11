@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.appcompat.app.AppCompatActivity
@@ -148,7 +149,8 @@ class MainActivity : AppCompatActivity() {
         //image.setImageDrawable(drawable)
         image.visibility = View.GONE
         retry.visibility = View.GONE
-        retry.text = "retry"
+        val retryText = getString(R.string.retry)
+        retry.text = "$retryText"
     }
 
     private fun nextQuestion() {
@@ -175,16 +177,23 @@ class MainActivity : AppCompatActivity() {
         if (count == 11) {
             image.visibility = View.VISIBLE
         }
-    bottomText.text = "Score: $score\nQuestion: ${count + 1}/${questionList.size}"
+        val scoreText = getString(R.string.score)
+        val questionText = getString(R.string.question)
+        bottomText.text = "$scoreText$score\n$questionText${count + 1}/${questionList.size}"
     }
 
     private fun endQuiz() {
         if (score > bestScore) {
             bestScore = score
         }
-        question.text = "GAME OVER\nFinal Score: $score/${questionList.size}\nBest Score: $bestScore"
-        if (score == questionList.size)
-            question.text = "${question.text}\nCongrats! All Correct!"
+        val gameOverText = getString(R.string.gameOver)
+        val finalScoreText = getString(R.string.finalScore)
+        val bestScoreText = getString(R.string.bestScore)
+        question.text = "$gameOverText\n$finalScoreText/${questionList.size}\n$bestScoreText"
+        if (score == questionList.size) {
+            val congratsText = getString(R.string.congrats)
+            question.text = "${question.text}\n$congratsText"
+        }
         nw.visibility = View.GONE
         ne.visibility = View.GONE
         sw.visibility = View.GONE
