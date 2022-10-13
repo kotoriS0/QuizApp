@@ -54,13 +54,13 @@
     "id": "09"
   },
   {
-    "question": "How many bones does the average human adult have?",
+    "question": "About how many bones does the average human adult have?",
     "answers": ["206", "503", "2", "128"],
     "correct": ["206"],
     "id": "10"
   },
   {
-    "question": "How many bones does the average human infant have?",
+    "question": "About how many bones does the average human infant have?",
     "answers": ["270", "206", "25", "350"],
     "correct": ["270"],
     "id": "11"

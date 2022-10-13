@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Was ist der zweitgrößte See in der Region?",
+    "answers": ["Superior", "Tanganyika", "Erie", "Lake of the Woods"],
+    "correct": ["Superior"],
+    "id": "01"
+  },
+  {
+    "question": "Welche Gemüsesorten wurden an Halloween als Jack-O-Laternen vor Kürbissen verwendet?",
+    "answers": ["Rüben", "Wassermelonen", "Kartoffeln", "Auberginen"],
+    "correct": ["Rüben"],
+    "id": "02"
+  },
+  {
+    "question": "'Korrelation' kann verwendet werden, um eine Beziehung zwischen einer quantitativen und einer qualitativen Variablen zu beschreiben.",
+    "answers": ["Wahr", "Falsch"],
+    "correct": ["Falsch"],
+    "id": "03"
+  },
+  {
+    "question": "Was ist die erste bekannte Schriftsprache?",
+    "answers": ["Sumerisch", "Latein", "Arabisch", "Ägyptische Hieroglyphen"],
+    "correct": ["Sumerisch"],
+    "id": "04"
+  },
+  {
+    "question": "Wie heißt die indigene Nation, in der Los Angeles lebt?",
+    "answers": ["Tongva", "Kalmath", "Ho-Chunk", "Cherokee"],
+    "correct": ["Tongva"],
+    "id": "05"
+  },
+  {
+    "question": "Wurde das Wort Orange zuerst der Farbe oder der Frucht gegeben?",
+    "answers": ["Früchte", "Farbe"],
+    "correct": ["Früchte"],
+    "id": "06"
+  },
+  {
+    "question": "Mit welchen tierischen Hyänen sind sie am engsten verwandt?",
+    "answers": ["Katzen", "Wölfe", "Elefanten", "Ratten"],
+    "correct": ["Katzen"],
+    "id": "07"
+  },
+  {
+    "question": "Dänemark verwendet in erster Linie den Euro als Währung.",
+    "answers": ["Wahr", "Falsch"],
+    "correct": ["Falsch"],
+    "id": "08"
+  },
+  {
+    "question": "Was ist das meistverkaufte Album aller Zeiten?",
+    "answers": ["Thriller", "Led Zeppelin II", "The Dark Side of the Moon", "Rumors"],
+    "correct": ["Thriller"],
+    "id": "09"
+  },
+  {
+    "question": "Wie viele Knochen hat ein durchschnittlicher Erwachsener?",
+    "answers": ["206", "503", "2", "128"],
+    "correct": ["206"],
+    "id": "10"
+  },
+  {
+    "question": "Wie viele Knochen hat ein durchschnittlicher Säugling etwa?",
+    "answers": ["270", "206", "25", "350"],
+    "correct": ["270"],
+    "id": "11"
+  },
+  {
+    "question": "Wer ist das?",
+    "answers": ["Dave Miller", "Aubergine Mann", "William Afton", "Jack F. Kennedy"],
+    "correct": ["Dave Miller", "Aubergine Mann", "William Afton"],
+    "id": "12"
+  }
+]

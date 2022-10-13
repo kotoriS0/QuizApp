@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Quiz App</string>
-    <string name="retry">recommencer</string>
+    <string name="app_name">Application Quiz</string>
+    <string name="retry">Recommencer</string>
     <string name="score">"Score: "</string>
     <string name="question">"Question: "</string>
     <string name="gameOver">JEU TERMINÉ</string>

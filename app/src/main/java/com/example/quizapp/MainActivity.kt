@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         nextQuestion()
 
         nw.setOnClickListener {
-            if(nw.text.equals(questionList.get(count).correct[0])) {
+            if(nw.text.equals(questionList[count].correct[0])) {
                 score++
                 //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
             }
@@ -189,7 +189,7 @@ class MainActivity : AppCompatActivity() {
         val gameOverText = getString(R.string.gameOver)
         val finalScoreText = getString(R.string.finalScore)
         val bestScoreText = getString(R.string.bestScore)
-        question.text = "$gameOverText\n$finalScoreText/${questionList.size}\n$bestScoreText"
+        question.text = "$gameOverText\n$finalScoreText$score/${questionList.size}\n$bestScoreText$bestScore"
         if (score == questionList.size) {
             val congratsText = getString(R.string.congrats)
             question.text = "${question.text}\n$congratsText"

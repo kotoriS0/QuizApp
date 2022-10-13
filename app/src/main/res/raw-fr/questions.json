@@ -1,74 +1,74 @@
 [
   {
-    "question": "What is the second largest lake by area?",
-    "answers": ["Superior", "Tanganyika", "Erie", "Lake of the Woods"],
-    "correct": ["Superior"],
+    "question": "Quel est le deuxième plus grand lac par région?",
+    "answers": ["Supérieur", "Tanganyika", "Érié", "Lac des Bois"],
+    "correct": ["Supérieur"],
     "id": "01"
   },
   {
-    "question": "What vegetables were used during halloween as Jack-O-Lanterns before pumpkins?",
-    "answers": ["Turnips", "Watermelons", "Potatoes", "Aubergines"],
-    "correct": ["Turnips"],
+    "question": "Quels légumes ont été utilisés pendant l'Halloween comme Jack-O-Lanterns avant les citrouilles?",
+    "answers": ["Navets", "Pastèque", "Pommes De Terre", "Aubergines"],
+    "correct": ["Navets"],
     "id": "02"
   },
   {
-    "question": "‘Correlation’ can be used to describe a relationship between a quantitative and qualitative variable.",
-    "answers": ["True", "False"],
-    "correct": ["False"],
+    "question": "‘La «corrélation» peut être utilisée pour décrire une relation entre une variable quantitative et une variable qualitative.",
+    "answers": ["Vrai", "Faux"],
+    "correct": ["Faux"],
     "id": "03"
   },
   {
-    "question": "What is the first known written language?",
-    "answers": ["Sumerian", "Latin", "Arabic", "Egyptian hieroglyphics"],
-    "correct": ["Sumerian"],
+    "question": "Quelle est la première langue écrite connue?",
+    "answers": ["Sumérien", "Latin", "Arabe", "Hiéroglyphes Égyptiens"],
+    "correct": ["Sumérien"],
     "id": "04"
   },
   {
-    "question": "What is the name of the indigenous nation LA resides on?",
+    "question": "Quel est le nom de la nation indigène sur laquelle réside Los Angeles?",
     "answers": ["Tongva", "Kalmath", "Ho-Chunk", "Cherokee"],
     "correct": ["Tongva"],
     "id": "05"
   },
   {
-    "question": "Was the word orange first given to the color or the fruit?",
-    "answers": ["Fruit", "Colour"],
+    "question": "Le mot «orange» a-t-il été donné pour la première fois à la couleur ou au fruit ?",
+    "answers": ["Fruit", "Couleur"],
     "correct": ["Fruit"],
     "id": "06"
   },
   {
-    "question": "What animal are hyenas most closely related to?",
-    "answers": ["Cats", "Wolves", "Elephants", "Rats"],
-    "correct": ["Cats"],
+    "question": "À quel animal les hyènes sont-elles le plus étroitement apparentées?",
+    "answers": ["Chats", "Loups", "Éléphants", "Rats"],
+    "correct": ["Chats"],
     "id": "07"
   },
   {
-    "question": "Denmark primarily uses the Euro as its form of currency.",
-    "answers": ["True", "False"],
-    "correct": ["False"],
+    "question": "Le Danemark utilise principalement l'euro comme monnaie.",
+    "answers": ["Vrai", "Faux"],
+    "correct": ["Faux"],
     "id": "08"
   },
   {
-    "question": "What is the highest selling album of all time?",
+    "question": "Quel est l'album le plus vendu de tous les temps?",
     "answers": ["Thriller", "Led Zeppelin II", "The Dark Side of the Moon", "Rumors"],
     "correct": ["Thriller"],
     "id": "09"
   },
   {
-    "question": "How many bones does the average human adult have?",
+    "question": "À peu près combien d'os l'adulte humain moyen a-t-il?",
     "answers": ["206", "503", "2", "128"],
     "correct": ["206"],
     "id": "10"
   },
   {
-    "question": "How many bones does the average human infant have?",
+    "question": "À peu près combien d'os l'enfant humain moyen a-t-il?",
     "answers": ["270", "206", "25", "350"],
     "correct": ["270"],
     "id": "11"
   },
   {
-    "question": "Who is this?",
-    "answers": ["Dave Miller", "Aubergine Man", "William Afton", "Jack F. Kennedy"],
-    "correct": ["Dave Miller", "Aubergine Man", "William Afton"],
+    "question": "Qui est-ce?",
+    "answers": ["Dave Miller", "Aubergine Homme", "William Afton", "Jack F. Kennedy"],
+    "correct": ["Dave Miller", "Aubergine Homme", "William Afton"],
     "id": "12"
   }
 ]

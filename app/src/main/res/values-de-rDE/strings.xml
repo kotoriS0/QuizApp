@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="retry">Wiederholen</string>
+    <string name="score">"Punktzahl: "</string>
+    <string name="question">Fragenummer:</string>
+    <string name="gameOver">SPIEL BEENDET</string>
+    <string name="finalScore">"Endergebnis: "</string>
+    <string name="bestScore">"Bestnote: "</string>
+    <string name="congrats">Glückwunsch! Alles richtig!</string>
+</resources>
