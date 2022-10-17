@@ -29,15 +29,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var image: ImageView
     lateinit var retry: Button
 
-    var count = 0
-    var score = 0
-    /*var ids: List<String> =
-        listOf("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12") */
-
     lateinit var questionList: List<Question>
 
-    var bestScore = 0
-
+    val quiz = Quiz(0, 0, 0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,71 +55,53 @@ class MainActivity : AppCompatActivity() {
         nextQuestion()
 
         nw.setOnClickListener {
-            if(nw.text.equals(questionList[count].correct[0])) {
-                score++
-                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            if(nw.text.equals(questionList[quiz.count].correct[0])) {
+                quiz.score++
             }
-            else {
-                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
-            }
-            count ++
+            quiz.count ++
             nextQuestion()
         }
         ne.setOnClickListener {
-            if(ne.text.equals(questionList.get(count).correct[0])) {
-                score++
-                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            if(ne.text.equals(questionList.get(quiz.count).correct[0])) {
+                quiz.score++
             }
-            else if (questionList.get(count).correct.size > 1) {
-                if(ne.text.equals(questionList.get(count).correct[1]) || ne.text.equals(questionList.get(count).correct[2])) {
-                    score++
-                    //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            else if (questionList.get(quiz.count).correct.size > 1) {
+                if(ne.text.equals(questionList.get(quiz.count).correct[1]) || ne.text.equals(questionList.get(quiz.count).correct[2])) {
+                    quiz.score++
                 }
             }
-            else {
-                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
-            }
-            count ++
+            quiz.count ++
             nextQuestion()
         }
         sw.setOnClickListener {
-            if(sw.text.equals(questionList.get(count).correct[0])) {
-                score++
-                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            if(sw.text.equals(questionList.get(quiz.count).correct[0])) {
+                quiz.score++
             }
-            else if (questionList.get(count).correct.size > 1) {
-                if(sw.text.equals(questionList.get(count).correct[1]) || sw.text.equals(questionList.get(count).correct[2])) {
-                    score++
-                    //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            else if (questionList.get(quiz.count).correct.size > 1) {
+                if(sw.text.equals(questionList.get(quiz.count).correct[1]) || sw.text.equals(questionList.get(quiz.count).correct[2])) {
+                    quiz.score++
                 }
             }
-            else {
-                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
-            }
-            count ++
+            quiz.count ++
             nextQuestion()
         }
         se.setOnClickListener {
-            if(se.text.equals(questionList.get(count).correct[0])) {
-                score++
-                //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            if(se.text.equals(questionList.get(quiz.count).correct[0])) {
+                quiz.score++
             }
-            else if (questionList.get(count).correct.size > 1) {
-                if(se.text.equals(questionList.get(count).correct[1]) || se.text.equals(questionList.get(count).correct[2])) {
-                    score++
-                    //Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            else if (questionList.get(quiz.count).correct.size > 1) {
+                if(se.text.equals(questionList.get(quiz.count).correct[1]) || se.text.equals(questionList.get(quiz.count).correct[2])) {
+                    quiz.score++
                 }
             }
-            else {
-                //Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
-            }
-            count ++
+
+            quiz.count ++
             nextQuestion()
         }
 
         retry.setOnClickListener {
-            score = 0
-            count = 0
+            quiz.score = 0
+            quiz.count = 0
             nw.visibility = View.VISIBLE
             ne.visibility = View.VISIBLE
             sw.visibility = View.VISIBLE
@@ -154,11 +130,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun nextQuestion() {
-        if (count >= questionList.size) {
+        if (quiz.count >= questionList.size) {
             endQuiz()
             return
         }
-        var current = questionList.get(count)
+        var current = questionList.get(quiz.count)
         question.text = current.question
         if (current.answers.size == 4) {
             current.answers.shuffle()
@@ -174,23 +150,23 @@ class MainActivity : AppCompatActivity() {
         nw.text = current.answers.get(0)
         ne.text = current.answers.get(1)
 
-        if (count == 11) {
+        if (quiz.count == 11) {
             image.visibility = View.VISIBLE
         }
         val scoreText = getString(R.string.score)
         val questionText = getString(R.string.question)
-        bottomText.text = "$scoreText$score\n$questionText${count + 1}/${questionList.size}"
+        bottomText.text = "$scoreText$quiz.score\n$questionText${quiz.count + 1}/${questionList.size}"
     }
 
     private fun endQuiz() {
-        if (score > bestScore) {
-            bestScore = score
+        if (quiz.score > quiz.bestScore) {
+            quiz.bestScore = quiz.score
         }
-        val gameOverText = getString(R.string.gameOver)
+        val gameOverText =  getString(R.string.gameOver)
         val finalScoreText = getString(R.string.finalScore)
         val bestScoreText = getString(R.string.bestScore)
-        question.text = "$gameOverText\n$finalScoreText$score/${questionList.size}\n$bestScoreText$bestScore"
-        if (score == questionList.size) {
+        question.text = "$gameOverText\n$finalScoreText$quiz.score/${questionList.size}\n$bestScoreText$quiz.bestScore"
+        if (quiz.score == questionList.size) {
             val congratsText = getString(R.string.congrats)
             question.text = "${question.text}\n$congratsText"
         }
